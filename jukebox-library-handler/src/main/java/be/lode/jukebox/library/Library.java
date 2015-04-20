@@ -23,11 +23,10 @@ public class Library {
 	public Library() {
 		super();
 		// TODO 700 path in configuration file
-		this.path = "D:\\Users\\Lode\\JukeboxSongs\\";
+		this.path = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\";
 		this.songs = new HashSet<Song>();
 	}
 
-	// TODO testing
 	public void addSong(String path) {
 		try {
 			Song song = parse(path);
