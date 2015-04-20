@@ -22,8 +22,10 @@ public class Library {
 
 	public Library() {
 		super();
+		//TODO 100 issue with persising songs metadata
 		// TODO 700 path in configuration file
-		this.path = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\";
+		//this.path = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\"; //surface
+		this.path = "D:\\Users\\Lode\\Dropbox\\JukeboxSongs\\";
 		this.songs = new HashSet<Song>();
 	}
 
@@ -35,7 +37,7 @@ public class Library {
 			}
 		} catch (IOException | SAXException | TikaException
 				| IncorrectMetadataException e) {
-			// TODO handle exception
+			// TODO 800 handle exception
 			// ignore exception, not useful for end user
 		}
 	}

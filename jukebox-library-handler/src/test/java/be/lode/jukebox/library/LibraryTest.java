@@ -28,7 +28,8 @@ public class LibraryTest {
 
 	@Before
 	public void setUp() throws Exception {
-		libPath = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\";
+		//libPath = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\"; //surface
+		libPath = "D:\\Users\\Lode\\Dropbox\\JukeboxSongs\\"; //desktop
 	}
 
 	@After
