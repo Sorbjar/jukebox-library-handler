@@ -7,12 +7,12 @@ import be.lode.general.repository.Repository;
 import be.lode.jukebox.business.model.Song;
 import be.lode.jukebox.business.repo.SongRepository;
 import be.lode.jukebox.library.Library;
-import be.lode.setup.ClearThenSetupTestDBData;
+import be.lode.setup.ResetDBSetupTestData;
 
-public class SetupTestLibraryDBData {
+public class ResetDBSetupTestDataSetupLibrarySync {
 
 	public static void main(String[] args) {
-		ClearThenSetupTestDBData.run();
+		ResetDBSetupTestData.run();
 		run();
 	}
 
