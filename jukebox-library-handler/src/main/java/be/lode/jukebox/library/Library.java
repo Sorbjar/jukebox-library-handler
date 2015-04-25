@@ -23,8 +23,8 @@ public class Library {
 	public Library() {
 		super();
 		// TODO 700 path in configuration file
-		this.path = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\"; //surface
-		//this.path = "D:\\Users\\Lode\\Dropbox\\JukeboxSongs\\";
+		//this.path = "C:\\Users\\lod\\Dropbox\\JukeboxSongs\\"; //surface
+		this.path = "D:\\Users\\Lode\\Dropbox\\JukeboxSongs\\";
 		this.songs = new HashSet<Song>();
 	}
 
