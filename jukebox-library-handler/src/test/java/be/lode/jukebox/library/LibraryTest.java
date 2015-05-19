@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import be.lode.jukebox.setup.ResetDBSetupLiveDataSetupLibrarySync;
 import be.lode.setup.ResetDBSetupTestData;
 
 public class LibraryTest {
@@ -21,7 +22,7 @@ public class LibraryTest {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		ResetDBSetupTestData.run();
+		ResetDBSetupLiveDataSetupLibrarySync.run();
 	}
 
 	private String libPath;

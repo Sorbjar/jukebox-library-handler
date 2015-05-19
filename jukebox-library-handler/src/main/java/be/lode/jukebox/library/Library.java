@@ -36,7 +36,6 @@ public class Library {
 			}
 		} catch (IOException | SAXException | TikaException
 				| IncorrectMetadataException e) {
-			// TODO 800 handle exception
 			// ignore exception, not useful for end user
 		}
 	}
@@ -81,7 +80,6 @@ public class Library {
 		String title = "";
 		String artist = "";
 		for (String name : metadataNames) {
-			// TODO 800 map names of metadata
 			if (name.equalsIgnoreCase("xmpDM:artist"))
 				artist = metadata.get(name);
 			if (name.equalsIgnoreCase("title"))
@@ -95,7 +93,6 @@ public class Library {
 					"Title information is missing from the metadata");
 		Song song = new Song(artist, title, path);
 		for (String name : metadataNames) {
-			// TODO 800 map names of metadata
 			song.getMetadataProperties().put(name, metadata.get(name));
 		}
 		return song;
