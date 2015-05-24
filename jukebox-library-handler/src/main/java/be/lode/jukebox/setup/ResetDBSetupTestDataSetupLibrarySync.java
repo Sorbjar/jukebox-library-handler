@@ -19,7 +19,8 @@ public class ResetDBSetupTestDataSetupLibrarySync {
 	public static void run() {
 		Library lib = new Library();
 		lib.resyncLibrary();
-		EntityManagerFactory emf =  Persistence.createEntityManagerFactory("jukebox-business");
+		EntityManagerFactory emf = Persistence
+				.createEntityManagerFactory("jukebox-business");
 		Repository<Song> sRepo = new SongRepository(emf);
 		for (Song s : lib.getSongs()) {
 			sRepo.save(s);
