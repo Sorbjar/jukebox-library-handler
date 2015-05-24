@@ -11,11 +11,18 @@ import be.lode.jukebox.library.Library;
 public class SetupLibrarySync {
 
 	public static void main(String[] args) {
-		run();
+		try {
+			run(args[0]);
+		} catch (ArrayIndexOutOfBoundsException ex) {
+			run(null);
+		}
+		System.exit(1);
 	}
 
-	public static void run() {
+	public static void run(String path) {
 		Library lib = new Library();
+		if (path != null)
+			lib = new Library(path);
 		lib.resyncLibrary();
 		EntityManagerFactory emf = Persistence
 				.createEntityManagerFactory("jukebox-business");
